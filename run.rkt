@@ -3,9 +3,7 @@
 rackunit
 rackunit/text-ui
 cpsc411/test-suite/public/v3
-"compiler.rkt"
-;; NB: Workaround typo in shipped version of cpsc411-lib
-(except-in cpsc411/langs/v3 values-lang-v3))
+"compiler.rkt")
 
 (define compile
   (apply
