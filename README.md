@@ -26,16 +26,16 @@ Compiles Values-lang v3 to x64 using a series of passes
 -   generate-x64
 
 Exprs-lang v7 language definition:  
-p ::= (module (define x (lambda (x ...) value)) ... value)
-value ::= triv. | (let ([x value] ...) value)  | (if value value value)  | (call value value ...)
-triv ::= x  | fixnum  | #t  | #f  | empty  | (void)  | (error uint8)  | ascii-char-literal
-x ::= name?  | prim-f
-prim-f ::= binop  | unop
-binop ::= \*  | +  | -  | eq?  | <  | <=  | >  | >=
-unop ::= fixnum?  | boolean?  | empty?  | void?  | ascii-char?  | error?  | not
-uint8 ::= uint8?
-ascii-char-literal ::= ascii-char-literal?
-fixnum ::= int61?
+p ::= (module (define x (lambda (x ...) value)) ... value)  
+value ::= triv. | (let ([x value] ...) value)  | (if value value value)  | (call value value ...)  
+triv ::= x  | fixnum  | #t  | #f  | empty  | (void)  | (error uint8)  | ascii-char-literal  
+x ::= name?  | prim-f. 
+prim-f ::= binop  | unop. 
+binop ::= \*  | +  | -  | eq?  | <  | <=  | >  | >=  
+unop ::= fixnum?  | boolean?  | empty?  | void?  | ascii-char?  | error?  | not  
+uint8 ::= uint8?  
+ascii-char-literal ::= ascii-char-literal?  
+fixnum ::= int61?  
 
 ## Example
 
