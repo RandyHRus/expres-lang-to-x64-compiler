@@ -14,7 +14,7 @@ cpsc411/test-suite/public/v3
      Uniquify
      implement-fafe-primops
      specify-representation
-     remove-complex-opera\*
+     remove-complex-opera*
      Sequentialize-let
      normalize-bind
      impose-calling-conventions
