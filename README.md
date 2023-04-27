@@ -28,36 +28,36 @@ Compiles Values-lang v3 to x64 using a series of passes
 Exprs-lang v7 language definition:  
 p ::= (module (define x (lambda (x ...) value)) ... value)
 value ::= triv
-| (let ([x value] ...) value)
-| (if value value value)
-| (call value value ...)
+  | (let ([x value] ...) value)
+  | (if value value value)
+  | (call value value ...)
 triv ::= x
-| fixnum
-| #t
-| #f
-| empty
-| (void)
-| (error uint8)
-| ascii-char-literal
+  | fixnum
+  | #t
+  | #f
+  | empty
+  | (void)
+  | (error uint8)
+  | ascii-char-literal
 x ::= name?
-| prim-f
+  | prim-f
 prim-f ::= binop
-| unop
+  | unop
 binop ::= \*
-| +
-| -
-| eq?
-| <
-| <=
-| >
-| >=
+  | +
+  | -
+  | eq?
+  | <
+  | <=
+  | >
+  | >=
 unop ::= fixnum?
-| boolean?
-| empty?
-| void?
-| ascii-char?
-| error?
-| not
+  | boolean?
+  | empty?
+  | void?
+  | ascii-char?
+  | error?
+  | not
 uint8 ::= uint8?
 ascii-char-literal ::= ascii-char-literal?
 fixnum ::= int61?
